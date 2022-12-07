@@ -1,0 +1,95 @@
+.aside {
+    margin: 5%;
+    width: 90%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    padding: 32px;
+}
+
+.welcome-text {
+    margin: 0px 24px 0px 24px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    margin: 128px 0px 128px 20%;
+}
+
+.foot {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    width: 90%;
+    height: 0.1px;
+    background-color: white;
+}
+
+.blog,
+.content {
+    width: 90%;
+    text-align: start;
+}
+
+.content-card {
+    width: 100%;
+}
+
+.blog-cards {
+    width: 90%;
+}
+
+.transition {
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 1s;
+}
+
+.transition.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.transcroll {
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 1s;
+}
+
+.transcroll.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@media only screen and (min-width: 768px) {
+    .aside {
+        width: 20%;
+        margin: 64px 8px 64px 8px;
+    }
+
+    .blog,
+    .content {
+        width: 50%;
+    }
+
+    .blog {
+        margin: 32px 0px 32px;
+    }
+
+    .divider {
+        width: 75%;
+    }
+
+    .blog-cards {
+        width: 50%;
+    }
+}
